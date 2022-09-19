@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    margin: 30px;
+}
+
+.name1, .name2, .name3{
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    text-align: center;
+    width: 110px;
+    font-size: 22px;
+    margin-left: auto;
+    font-weight: bold;
+}
+
+.column1, .column2, .column3{
+    border: 4px solid black;
+    text-align: center;
+    width: 30%;
+    float: left;
+    margin: 1%;
+    padding-left: 10px;
+    padding-top: 0px;
+    background-color: #8b8c8d;
+}
+
+.text{
+    text-align: left;
+    font-size: 16px;
+}
+
+.name1{
+    background-color: #e78a98;
+}
+
+.name2{
+    background-color: #b53448;
+    color: #ffffff
+}
+
+.name3{
+    background-color: #e7e196;
+}
+
+@media (min-width: 992px){
+    .column1, .column2, .column3{
+        width: 30%;
+    }
+    
+    .column1{
+        margin-left: 3%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .column1, .column2{
+        width: 45%;
+    }
+
+    .column3{
+        width: 92%;
+    }
+
+    .column1, .column3{
+        margin-left: 3.5%;
+    }
+}
+
+@media (max-width: 767px){
+    .column1, .column2, .column3{
+        width: 92%;
+        margin-left: 4%;
+        margin-bottom: 4%;
+    }
+}
